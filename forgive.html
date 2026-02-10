@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<style>
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 { font-size: 26px; margin-bottom: 30px; }
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+}
+
+#yes {
+    background: green;
+    color: white;
+}
+
+#no {
+    background: red;
+    color: white;
+    margin-left: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Thanusri <h1>I messed up... will you forgive me? </h1>
+
+<button id="yes" onclick="yes()">Yes</button>
+<button id="no" onclick="no()">No</button>
+
+<script>
+let size = 18;
+
+function no() {
+    size += 6;
+    document.getElementById("yes").style.fontSize = size + "px";
+}
+
+function yes() {
+    document.body.innerHTML = "<h1>Thank you madam, Let's forget the fight </h1>";
+}
+</script>
+
+</body>
+</html>
