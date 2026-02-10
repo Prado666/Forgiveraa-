@@ -52,4 +52,5 @@ function no() {
 }
 
 function yes() {
-    document.body.innerHTML = "<h1>Thank you madam, Let's forget the fight </h1>
+    document.body.innerHTML = "<h1>Thank you madam, Let's forget the fight </h1>";
+}
